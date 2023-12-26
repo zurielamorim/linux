@@ -114,3 +114,4 @@ echo "PubkeyAcceptedKeyTypes=+ssh-rsa" >> ~/.ssh/config
 echo "StrictHostKeyChecking no" >> ~/.ssh/config
 
 mostrar_mensagem "Chaves SSH configuradas com sucesso!"
+
