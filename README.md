@@ -39,3 +39,28 @@ Essas instalações visam fornecer um ambiente de trabalho mais completo e funci
 
 #######################################################################################
 
+Script habilitar_fone.sh
+
+O script habilitar_fone.sh é projetado para executar comandos no kernel do GNOME, permitindo a habilitação do funcionamento do fone de ouvido P3 no ambiente Linux.
+
+#######################################################################################
+
+Script connect.sh
+
+O script connect.sh foi desenvolvido para otimizar o tempo de conexão via SSH em servidores. É necessário ajustar as informações de usuário e senha diretamente no script antes de utilizá-lo.
+
+
+#######################################################################################
+
+
+Script tunel.sh
+
+O script tunel.sh, semelhante ao script connect, requer a inserção de informações de usuário e senha diretamente no script para seu funcionamento adequado. Desenvolvido por Ramal e adaptado por Josima, o script visa facilitar o acesso remoto a equipamentos na rede do cliente.
+
+
+#########################################################################################
+
+
+Script dns_update.sh
+
+O script dns_update.sh foi desenvolvido para adicionar alguns servidores DNS ao arquivo resolv.conf. Em certos casos, mesmo com o WireGuard funcionando, pode haver dificuldades de acesso ao servidor de destino. Este script ajuda a contornar esse problema ao adicionar DNS específicos para facilitar o acesso.
