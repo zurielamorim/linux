@@ -18,6 +18,18 @@ sudo apt-get update
 mostrar_mensagem "Fazendo upgrade dos pacotes instalados..."
 sudo apt-get upgrade -y
 
+# Instalar WireGuard, se ainda não estiver instalado
+mostrar_mensagem "Instalando WireGuard..."
+if ! programa_instalado "wireguard"; then
+    sudo apt-get install -y wireguard
+    mostrar_mensagem "WireGuard instalado com sucesso!"
+else
+    mostrar_mensagem "WireGuard já está instalado. Pulando..."
+fi
+
+# Pausa para o usuário
+read -p "Pressione Enter para continuar a instalação..."
+
 # Instalar notepadqq, se ainda não estiver instalado
 mostrar_mensagem "Instalando Notepadqq..."
 if ! programa_instalado "notepadqq"; then
@@ -114,4 +126,6 @@ echo "PubkeyAcceptedKeyTypes=+ssh-rsa" >> ~/.ssh/config
 echo "StrictHostKeyChecking no" >> ~/.ssh/config
 
 mostrar_mensagem "Chaves SSH configuradas com sucesso!"
+
+# Continue com o restante do seu script...
 
