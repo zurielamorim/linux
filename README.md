@@ -1,6 +1,6 @@
 ########################################################################################
 
-Script de Instalação
+Script instalacao.sh
 
 O script instalacao.sh realiza uma série de passos para configurar e instalar diversas ferramentas no seu sistema. A seguir estão as principais ações executadas pelo script:
 
