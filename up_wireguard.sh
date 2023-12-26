@@ -14,20 +14,25 @@ read -p "Digite a chave privada (PrivateKey): " chavePrivada
 read -p "Digite o endereço (Address, exemplo: 172.20.70.0/24): " endereco
 read -p "Digite a chave pública (PublicKey): " chavePublica
 
+# Preencher o restante das informações
+mtu="1412"
+dns="172.20.70.1"
+endpoint="vpn.escallo.com.br:51840"
+allowedIPs="10.252.0.0/15,172.20.0.0/16,172.20.60.0/24,172.20.65.0/24,172.20.66.0/23"
+persistentKeepalive="25"
+
 # Adicionar as configurações ao arquivo wg0.conf
 echo "[Interface]" > "$arquivo"
 echo "PrivateKey = $chavePrivada" >> "$arquivo"
 echo "Address = $endereco" >> "$arquivo"
-echo "MTU = 1412" >> "$arquivo"
-echo "DNS = 172.20.70.1" >> "$arquivo"
+echo "MTU = $mtu" >> "$arquivo"
+echo "DNS = $dns" >> "$arquivo"
 echo "" >> "$arquivo"
 echo "[Peer]" >> "$arquivo"
 echo "PublicKey = $chavePublica" >> "$arquivo"
-read -p "Digite o endpoint (exemplo: vpn.escallo.com.br:51840): " endpoint
 echo "Endpoint = $endpoint" >> "$arquivo"
-read -p "Digite os IPs permitidos (exemplo: 10.252.0.0/15,172.20.0.0/16): " allowedIPs
 echo "AllowedIPs = $allowedIPs" >> "$arquivo"
-echo "PersistentKeepalive = 25" >> "$arquivo"
+echo "PersistentKeepalive = $persistentKeepalive" >> "$arquivo"
 
 # Iniciar o serviço WireGuard
 systemctl start wg-quick@wg0
