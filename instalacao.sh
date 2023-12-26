@@ -42,7 +42,62 @@ fi
 # Pausa para o usuário
 read -p "Pressione Enter para continuar a instalação..."
 
-# ... (repetir o padrão para os outros programas)
+# Instalar CopyQ, se ainda não estiver instalado
+mostrar_mensagem "Instalando CopyQ..."
+if ! programa_instalado "copyq"; then
+    sudo apt-get install -y copyq
+    mostrar_mensagem "CopyQ instalado com sucesso!"
+else
+    mostrar_mensagem "CopyQ já está instalado. Pulando..."
+fi
+
+# Pausa para o usuário
+read -p "Pressione Enter para continuar a instalação..."
+
+# Instalar Timeshift, se ainda não estiver instalado
+mostrar_mensagem "Instalando Timeshift..."
+if ! programa_instalado "timeshift"; then
+    sudo apt-get install -y timeshift
+    mostrar_mensagem "Timeshift instalado com sucesso!"
+else
+    mostrar_mensagem "Timeshift já está instalado. Pulando..."
+fi
+
+# Pausa para o usuário
+read -p "Pressione Enter para continuar a instalação..."
+
+# Instalar Flameshot, se ainda não estiver instalado
+mostrar_mensagem "Instalando Flameshot..."
+if ! programa_instalado "flameshot"; then
+    sudo apt-get install -y flameshot
+    mostrar_mensagem "Flameshot instalado com sucesso!"
+else
+    mostrar_mensagem "Flameshot já está instalado. Pulando..."
+fi
+
+# Pausa para o usuário
+read -p "Pressione Enter para continuar a instalação..."
+
+# Instalar AnyDesk, se ainda não estiver instalado
+mostrar_mensagem "Instalando AnyDesk..."
+if ! programa_instalado "anydesk"; then
+    sudo apt-get install -y anydesk
+    mostrar_mensagem "AnyDesk instalado com sucesso!"
+else
+    mostrar_mensagem "AnyDesk já está instalado. Pulando..."
+fi
+
+# Pausa para o usuário
+read -p "Pressione Enter para continuar a instalação..."
+
+# Instalar Wine, se ainda não estiver instalado
+mostrar_mensagem "Instalando Wine..."
+if ! programa_instalado "wine64"; then
+    sudo apt-get install -y wine64
+    mostrar_mensagem "Wine instalado com sucesso!"
+else
+    mostrar_mensagem "Wine já está instalado. Pulando..."
+fi
 
 # Criar diretório ~/.ssh
 mostrar_mensagem "Criando diretório ~/.ssh..."
