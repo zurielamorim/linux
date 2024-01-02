@@ -42,7 +42,7 @@ O script connect.sh foi desenvolvido para otimizar o tempo de conexão via SSH e
 
 Script tunel.sh
 
-O script tunel.sh, semelhante ao script connect, requer a inserção de informações de usuário e senha diretamente no script para seu funcionamento adequado. Desenvolvido por Ramal e adaptado por Josima, o script visa facilitar o acesso remoto a equipamentos na rede do cliente.
+O script tunel.sh, semelhante ao script connect, requer a inserção de informações de usuário e senha diretamente no script para seu funcionamento adequado. Desenvolvido por Ramon e adaptado por Josimar, o script visa facilitar o acesso remoto a equipamentos na rede do cliente.
 
 
 ########################################################################################
