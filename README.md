@@ -60,6 +60,12 @@ O script up_wireguard.sh foi desenvolvido para simplificar a configuração do W
 
 ########################################################################################
 
+Script habilitar_fone.sh
+
+O script em foco tem como objetivo possibilitar a utilização do fone de ouvido P3 no sistema operacional Linux.
+
+########################################################################################
+
 Configuração de Aliases para Facilitar o Uso dos Scripts Connect e Tunel.
 
 Para simplificar a execução dos scripts Connect e Tunnel através de aliases, siga os passos abaixo:
